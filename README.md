@@ -1,2 +1,2 @@
-# PatchSDK
-Patch SDK for ola
+# pjsipIOS
+Framework for pjsip on ios
