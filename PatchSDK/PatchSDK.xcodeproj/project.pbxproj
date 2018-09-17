@@ -28,7 +28,6 @@
 		D9FE9F32214F869C00B12ADC /* libpjsip-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FE9F1F214F869100B12ADC /* libpjsip-arm-apple-darwin9.a */; };
 		D9FE9F33214F869C00B12ADC /* libpjmedia-audiodev-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FE9F20214F869200B12ADC /* libpjmedia-audiodev-arm-apple-darwin9.a */; };
 		D9FE9F34214F869C00B12ADC /* libpjsip-ua-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FE9F21214F869300B12ADC /* libpjsip-ua-arm-apple-darwin9.a */; };
-		D9FE9F35214F869C00B12ADC /* pjsip-include in Resources */ = {isa = PBXBuildFile; fileRef = D9FE9F22214F869500B12ADC /* pjsip-include */; };
 		D9FE9F36214F869C00B12ADC /* libpjlib-util-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FE9F23214F869600B12ADC /* libpjlib-util-arm-apple-darwin9.a */; };
 		D9FE9F37214F869C00B12ADC /* libpjsip-simple-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FE9F24214F869800B12ADC /* libpjsip-simple-arm-apple-darwin9.a */; };
 		D9FE9F38214F869C00B12ADC /* libpjmedia-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FE9F25214F869900B12ADC /* libpjmedia-arm-apple-darwin9.a */; };
@@ -62,7 +61,6 @@
 		D9FE9F1F214F869100B12ADC /* libpjsip-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-arm-apple-darwin9.a"; sourceTree = "<group>"; };
 		D9FE9F20214F869200B12ADC /* libpjmedia-audiodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-audiodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
 		D9FE9F21214F869300B12ADC /* libpjsip-ua-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-ua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		D9FE9F22214F869500B12ADC /* pjsip-include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "pjsip-include"; sourceTree = "<group>"; };
 		D9FE9F23214F869600B12ADC /* libpjlib-util-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjlib-util-arm-apple-darwin9.a"; sourceTree = "<group>"; };
 		D9FE9F24214F869800B12ADC /* libpjsip-simple-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-simple-arm-apple-darwin9.a"; sourceTree = "<group>"; };
 		D9FE9F25214F869900B12ADC /* libpjmedia-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-arm-apple-darwin9.a"; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 				D9FE9F1B214F868D00B12ADC /* libresample-arm-apple-darwin9.a */,
 				D9FE9F18214F868B00B12ADC /* libspeex-arm-apple-darwin9.a */,
 				D9FE9F16214F868800B12ADC /* libsrtp-arm-apple-darwin9.a */,
-				D9FE9F22214F869500B12ADC /* pjsip-include */,
 				D9412E132125891400386FFD /* PatchSDK */,
 				D9412E122125891400386FFD /* Products */,
 				DF2CAE90D4918E7E46676638 /* Pods */,
@@ -247,7 +244,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9FE9F35214F869C00B12ADC /* pjsip-include in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,10 +418,7 @@
 					"COCOAPODS=1",
 					"PJ_AUTOCONF=1",
 				);
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/pjsip-include\"",
-					"\"$(SRCROOT)/PatchSdk\"",
-				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/PatchSDK\"";
 				INFOPLIST_FILE = PatchSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -466,10 +459,7 @@
 					"COCOAPODS=1",
 					"PJ_AUTOCONF=1",
 				);
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/pjsip-include\"",
-					"\"$(SRCROOT)/PatchSdk\"",
-				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/PatchSDK\"";
 				INFOPLIST_FILE = PatchSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
