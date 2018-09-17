@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <PatchSDK/PJSUAWrapper.h>
-#import <PatchSDK/CallCFunction.h>
+//#import <PatchSDK/CallCFunction.h>
+#import "PJSUAWrapper.h"
 
 //! Project version number for PatchSDK.
 FOUNDATION_EXPORT double PatchSDKVersionNumber;
